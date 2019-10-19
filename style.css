@@ -7,21 +7,19 @@ body {
 }
 
 :root {
-    --amazon-black: rgb(15,23, 30);
+    --amazon-black: rgb(15, 23, 30);
     --amazon-navy: rgb(35, 47, 62);
     --amazon-dark-navy: rgb(27, 37, 48);
     --amazon-light-gray: rgb(243, 243, 243);
     --amazon-arrow: rgb(239, 241, 241);
-    --amazon-gray: rgb(205,205,205);
+    --amazon-gray: rgb(205, 205, 205);
     --amazon-dark-gray: rgb(88, 88, 88);
     --amazon-light-font: rgb(178, 182, 187);
     --amazon-dark-font: rgb(158, 163, 169);
     --amazon-light-blue: rgb(0, 170, 225);
     --amazon-light-orange: rgb(254, 189, 105);
     --amazond-dark-orange: rgb(236, 134, 5);
-
 }
-
 
 header {
     width: 100%;
@@ -31,24 +29,23 @@ header {
     background-color: var(--amazon-navy);
 }
 
-
-
 .logo-header {
     /* width: 10%; */
     grid-row: 1/5;
     place-self: center;
-
-
 }
+
 .top-nav-search {
     width: 100%;
     padding: 11px 4px 0 0;
 }
 
-.top-input-container, .top-nav-nav{
+.top-input-container,
+.top-nav-nav {
     display: flex;
-    flex-flow: row;    
+    flex-flow: row;
 }
+
 .top-nav-nav {
     display: inline-flex;
     /* align-content: flex-end; */
@@ -56,8 +53,8 @@ header {
     width: 30%;
     margin: 0 0 0 2%;
     color: white;
-   
 }
+
 .top-input-select {
     background-color: var(--amazon-light-gray);
     padding: 10px;
@@ -65,19 +62,18 @@ header {
     border-radius: 4px 0 0 4px;
     border-right: 1px solid var(--amazon-gray);
     color: var(--amazon-dark-gray);
-
 }
 
 .nav-nav-item {
     padding: 6px;
     margin: 2%;
     font-size: 14px;
- 
+
 }
 
 .top-input-container {
     display: inline-flex;
-    width: 65%;   
+    width: 65%;
     border-radius: 4px;
 }
 
@@ -85,7 +81,7 @@ header {
     border: 1px solid var(--amazon-light-orange);
 }
 
-.input-search{
+.input-search {
     width: 85%;
     padding: 4px 0;
     font-size: 12px;
@@ -93,7 +89,7 @@ header {
     border: none;
 }
 
-input[type='submit']{
+input[type='submit'] {
     background-color: var(--amazon-light-orange);
     border: none;
     border-radius: 0 4px 4px 0;
@@ -108,28 +104,29 @@ input[type='submit']{
 
 }
 
-.bottom-nav-list{
+.bottom-nav-list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     color: var(--amazon-light-font);
     padding: 0;
 }
+
 .bottom-nav h2 {
     color: var(--amazon-light-blue);
     margin: 0 auto;
     place-self: center;
 }
+
 .bottom-nav span {
     color: var(--amazon-light-font);
     font-weight: lighter;
-    
 }
 
 .bottom-nav li {
     list-style: none;
     font-size: 13px;
-    margin: 1px 2px 3px 1px;
+    /* margin: 1px 2px 3px 1px; */
     padding: 7px 10px 0 0;
     align-self: flex-end;
 }
@@ -141,7 +138,7 @@ input[type='submit']{
 .bottom-nav a {
     color: var(--amazon-light-font);
     text-decoration: none;
-    padding: 4px;
+    padding: 5px;
 }
 
 .main-nav {
@@ -159,14 +156,14 @@ input[type='submit']{
     padding: 0;
     align-self: center;
 }
+
 .main-nav span {
     color: white;
 }
 
-.main-nav li{
+.main-nav li {
     list-style: none;
     display: inline;
-    
     padding: 0 4px;
 }
 
@@ -178,7 +175,8 @@ input[type='submit']{
     font-size: 15px;
 }
 
-.main-nav-user, .main-nav-list {
+.main-nav-user,
+.main-nav-list {
     align-self: center;
 }
 
@@ -186,6 +184,7 @@ input[type='submit']{
     height: 288px;
     position: relative;
 }
+
 .scroll-img {
     height: 100%;
 }
@@ -199,27 +198,26 @@ input[type='submit']{
     background-image: linear-gradient(to right, transparent, transparent);
     border: none;
     transition: background-image 1s ease-in;
-    
+
 }
 
 .large-scroller:hover {
-    background-image: linear-gradient(to right, transparent, black);
-    
-    
+    background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.7));
 }
 
 .scroller-nav-list {
     display: flex;
     background-color: var(--amazon-navy);
     padding: 0 48px;
-    height: 38px;  
+    height: 38px;
 }
 
-.main-nav-left, .main-nav-right {
-    align-self:center;
+.main-nav-left,
+.main-nav-right {
+    align-self: center;
 }
 
-.main-nav-link {    
+.main-nav-link {
     margin: 0 24px -1px 0;
     align-self: center;
 }
@@ -230,7 +228,7 @@ input[type='submit']{
 
 .main-nav-link a {
     color: var(--amazon-dark-font);
-    text-decoration: none;  
+    text-decoration: none;
 }
 
 main {
@@ -243,7 +241,7 @@ main h2 {
     margin: 0;
     padding: 0;
 }
-    
+
 .list-title {
     color: white;
     padding: 0 0 0 48px;
@@ -267,15 +265,16 @@ main h2 {
 
 .list-scroll img {
     width: 329px;
- 
+
 }
 
-.list-scroll button {    
+.list-scroll button {
     width: 50px;
     height: 89%;
     background-color: rgba(0, 0, 0, 0.5);
     transition: background-color .275s ease-in;
     border: none;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .5);
 }
 
 .list-scroll button:hover {
@@ -306,11 +305,13 @@ main h2 {
     top: 0;
     bottom: 0;
 }
+
 .left {
     transform: rotate(135deg);
     margin-left: 5px;
 }
-.right{
+
+.right {
     transform: rotate(-45deg);
     margin-right: 5px;
 }
