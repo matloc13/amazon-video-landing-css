@@ -1,0 +1,316 @@
+/* * {
+    border: 1px solid gold;
+} */
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+:root {
+    --amazon-black: rgb(15,23, 30);
+    --amazon-navy: rgb(35, 47, 62);
+    --amazon-dark-navy: rgb(27, 37, 48);
+    --amazon-light-gray: rgb(243, 243, 243);
+    --amazon-arrow: rgb(239, 241, 241);
+    --amazon-gray: rgb(205,205,205);
+    --amazon-dark-gray: rgb(88, 88, 88);
+    --amazon-light-font: rgb(178, 182, 187);
+    --amazon-dark-font: rgb(158, 163, 169);
+    --amazon-light-blue: rgb(0, 170, 225);
+    --amazon-light-orange: rgb(254, 189, 105);
+    --amazond-dark-orange: rgb(236, 134, 5);
+
+}
+
+
+header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 1fr;
+    background-color: var(--amazon-navy);
+}
+
+
+
+.logo-header {
+    /* width: 10%; */
+    grid-row: 1/5;
+    place-self: center;
+
+
+}
+.top-nav-search {
+    width: 100%;
+    padding: 11px 4px 0 0;
+}
+
+.top-input-container, .top-nav-nav{
+    display: flex;
+    flex-flow: row;    
+}
+.top-nav-nav {
+    display: inline-flex;
+    /* align-content: flex-end; */
+    align-items: flex-end;
+    width: 30%;
+    margin: 0 0 0 2%;
+    color: white;
+   
+}
+.top-input-select {
+    background-color: var(--amazon-light-gray);
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 4px 0 0 4px;
+    border-right: 1px solid var(--amazon-gray);
+    color: var(--amazon-dark-gray);
+
+}
+
+.nav-nav-item {
+    padding: 6px;
+    margin: 2%;
+    font-size: 14px;
+ 
+}
+
+.top-input-container {
+    display: inline-flex;
+    width: 65%;   
+    border-radius: 4px;
+}
+
+.top-input-container:active {
+    border: 1px solid var(--amazon-light-orange);
+}
+
+.input-search{
+    width: 85%;
+    padding: 4px 0;
+    font-size: 12px;
+    outline: none;
+    border: none;
+}
+
+input[type='submit']{
+    background-color: var(--amazon-light-orange);
+    border: none;
+    border-radius: 0 4px 4px 0;
+}
+
+.bottom-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    padding: 2px 0 0;
+
+}
+
+.bottom-nav-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--amazon-light-font);
+    padding: 0;
+}
+.bottom-nav h2 {
+    color: var(--amazon-light-blue);
+    margin: 0 auto;
+    place-self: center;
+}
+.bottom-nav span {
+    color: var(--amazon-light-font);
+    font-weight: lighter;
+    
+}
+
+.bottom-nav li {
+    list-style: none;
+    font-size: 13px;
+    margin: 1px 2px 3px 1px;
+    padding: 7px 10px 0 0;
+    align-self: flex-end;
+}
+
+.bottom-nav a:hover {
+    box-shadow: 0 0 1px var(--amazon-light-font);
+}
+
+.bottom-nav a {
+    color: var(--amazon-light-font);
+    text-decoration: none;
+    padding: 4px;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--amazon-dark-navy);
+    color: var(--amazon-dark-font);
+    padding: 0 4px;
+}
+
+.main-nav h2 {
+    display: inline;
+    color: var(--amazon-light-blue);
+    margin: 0 38px 0 -25px;
+    padding: 0;
+    align-self: center;
+}
+.main-nav span {
+    color: white;
+}
+
+.main-nav li{
+    list-style: none;
+    display: inline;
+    
+    padding: 0 4px;
+}
+
+.main-nav-list {
+    font-size: 17px;
+}
+
+.main-nav-user {
+    font-size: 15px;
+}
+
+.main-nav-user, .main-nav-list {
+    align-self: center;
+}
+
+.img-scroller-container {
+    height: 288px;
+    position: relative;
+}
+.scroll-img {
+    height: 100%;
+}
+
+.large-scroller {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    background-image: linear-gradient(to right, transparent, transparent);
+    border: none;
+    transition: background-image 1s ease-in;
+    
+}
+
+.large-scroller:hover {
+    background-image: linear-gradient(to right, transparent, black);
+    
+    
+}
+
+.scroller-nav-list {
+    display: flex;
+    background-color: var(--amazon-navy);
+    padding: 0 48px;
+    height: 38px;  
+}
+
+.main-nav-left, .main-nav-right {
+    align-self:center;
+}
+
+.main-nav-link {    
+    margin: 0 24px -1px 0;
+    align-self: center;
+}
+
+.main-nav-user {
+    align-self: center;
+}
+
+.main-nav-link a {
+    color: var(--amazon-dark-font);
+    text-decoration: none;  
+}
+
+main {
+    padding: 24px 0;
+    margin: 0;
+    background-color: var(--amazon-black);
+}
+
+main h2 {
+    margin: 0;
+    padding: 0;
+}
+    
+.list-title {
+    color: white;
+    padding: 0 0 0 48px;
+}
+
+.list-title span {
+    color: var(--amazon-light-blue);
+}
+
+.list-scroll {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.list-scroll li {
+    border-radius: 4px;
+    margin: 0 0 18px;
+    padding: 0 8px 0 0;
+}
+
+.list-scroll img {
+    width: 329px;
+ 
+}
+
+.list-scroll button {    
+    width: 50px;
+    height: 89%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color .275s ease-in;
+    border: none;
+}
+
+.list-scroll button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.btn-arrow {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    padding: 3px;
+    border: solid var(--amazon-arrow);
+    border-width: 0 3px 3px 0px;
+    border-radius: 1px;
+}
+
+
+.list-scroll .btn-scroll-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.list-scroll .btn-scroll-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.left {
+    transform: rotate(135deg);
+    margin-left: 5px;
+}
+.right{
+    transform: rotate(-45deg);
+    margin-right: 5px;
+}
